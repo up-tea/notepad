@@ -1,7 +1,15 @@
 <template>
   <div class="named-slot-child">
     <h2>{{message}}</h2>
-    <p>アカウント切り替えテストコミット</p>
+    <slot name="first">
+      <p>first slot</p>
+    </slot>
+    <slot name="second">
+      <p>second slot</p>
+    </slot>
+    <slot name="third">
+      <p>third slot</p>
+    </slot>
   </div>
 </template>
 
